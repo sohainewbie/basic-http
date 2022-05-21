@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+</head>
+<body>
+<div>
+  <form method="POST" action="/upload" enctype="multipart/form-data">
+      <input name="file" type="file"/>
+      <input type="hidden" name="auth" value="{{.authToken}}"> 
+      <input type="submit" value="upload" />
+  </form>
+  <span>{{.success}}</span>
+</div>
+</body>
+</html>
